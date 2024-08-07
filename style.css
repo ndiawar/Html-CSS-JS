@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #A7CE19;
+}
+
+/*CSS DU HERO*/
+.hero {
+    background-image: url('./images/1.png'); /* Image d'arrière-plan */
+    background-size: contain;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposition pour améliorer la lisibilité */
+    z-index: 1;
+}
+/*Fin Hero*/
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+#bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto; /* Centrer le conteneur sur la page */
+}
+
+.gridbloc {
+    background-color: #FFD737;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px; /* Réduire la taille pour ajuster le contenu */
+    margin: 10px;
+    display: flex; /* Utiliser flexbox */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    align-items: center; /* Centrer verticalement le contenu */
+    height: 150px; /* Assurer une hauteur fixe pour le centrage */
+}
+
+.titlebloc {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #0000FF;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #589A8D;
+    opacity: 0.5;
+    transform: translateX(10px); /* Remplace 'left' par 'translateX' pour déplacer */
+}
